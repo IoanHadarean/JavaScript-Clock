@@ -1,4 +1,6 @@
 html {
+    background: url("/static/images/clock.png");
+    background-size: cover;
     font-family: 'Times New Roman';
     text-align: center;
     font-size: 10px;

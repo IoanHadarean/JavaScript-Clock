@@ -2,6 +2,9 @@ const secondsHand = document.querySelector('.seconds-hand');
 const minutesHand = document.querySelector('.minutes-hand');
 const hoursHand = document.querySelector('.hour-hand');
 const hands = document.querySelectorAll('.clock__hand');
+const body = document.getElementsByTagName('body')[0];
+
+
 
 function setDate() {
     const now = new Date();
@@ -19,11 +22,9 @@ function setDate() {
         hands.forEach(hand => hand.style.transition = 'none'); // removes the transition
     }
     else {
-        hands.forEach(hand => hand.style.transition = 'all 0.5s'); // adds back the transition
+        hands.forEach(hand => hand.style.transition = ''); // reverts the transition to the original stylesheet
     }
 }
-
-
 
 
 setInterval(setDate, 1000);
