@@ -1,23 +1,36 @@
-html, body {
-    margin: 0;
-    background: gray;
-    min-height: 100vh;
+html {
+    font-family: 'Times New Roman';
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
     display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
 }
 
 .clock {
-    width: 20vw;
-    height: 20vw;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
-    border: 20px solid white;
+    border: 20px solid lightblue;
+    padding: 2rem;
+    margin: 50px auto;
     position: relative;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px black,
+    inset 0 0 10px black,
+    0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .clock__face {
-    
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .clock__hand {
@@ -29,4 +42,5 @@ html, body {
     transform: rotate(90deg);
     transform-origin: 100%;
     transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
