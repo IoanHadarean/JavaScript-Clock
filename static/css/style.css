@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    background: gray;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.clock {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    border: 20px solid white;
+    position: relative;
+}
+
+.clock__face {
+    
+}
+
+.clock__hand {
+    width: 50%;
+    background: black;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: all 0.5s;
+}
