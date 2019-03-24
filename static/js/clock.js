@@ -16,10 +16,10 @@ function setDate() {
     hoursHand.style.transform = `rotate(${hoursDegrees}deg`;
 
     if (secondsDegrees === 90) {
-        hands.forEach(hand => hand.style.transition = 'none');
+        hands.forEach(hand => hand.style.transition = 'none'); // removes the transition
     }
     else {
-        hands.forEach(hand => hand.style.transition = '');
+        hands.forEach(hand => hand.style.transition = 'all 0.5s'); // adds back the transition
     }
 }
 
